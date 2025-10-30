@@ -233,6 +233,31 @@
             border: none;
             display: block;
         }
+        /* 全画面チャットボタン */
+        .fullscreen-chat-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            padding: 14px 35px;
+            margin: 20px 0;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .fullscreen-chat-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
+        }
+        .fullscreen-icon {
+            font-size: 1.1em;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
         /* 機能紹介セクション */
         .features {
             display: grid;
@@ -566,6 +591,10 @@
                  allow="microphone">
                 </iframe>
             </div>
+
+            <a href="https://udify.app/chat/q2uA8e1VAifYHPo9" class="fullscreen-chat-button" target="_blank" rel="noopener noreferrer">
+                <span class="fullscreen-icon">🖥️</span>全画面でチャットを開く
+            </a>
 
             <div class="features">
                 <div class="feature-card">
