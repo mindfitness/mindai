@@ -16,76 +16,76 @@
             background: linear-gradient(135deg, #f4f7f6 0%, #e8f0f5 100%);
             color: #333;
             line-height: 1.6;
-            font-size: 15px; 
+            font-size: 14px; /* 全体の基本フォントサイズを14pxに縮小 */
         }
         /* コンテナ */
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 10px 15px;
+            padding: 10px 10px; /* パディングを少し減らす */
         }
         /* ヘッダー */
         header {
             text-align: center;
-            padding: 30px 15px 20px;
+            padding: 20px 10px 15px; /* パディングを調整 */
             background-color: #ffffff;
-            border-bottom: 3px solid #007bff; 
+            border-bottom: 3px solid #007bff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         header h1 {
             color: #007bff;
-            font-size: 1.6em;
+            font-size: 1.4em; /* モバイル向けに縮小 */
             margin-bottom: 5px;
             line-height: 1.3;
         }
         header p {
             color: #555;
-            font-size: 0.9em;
+            font-size: 0.85em; /* モバイル向けに縮小 */
         }
         /* 特設ページバナー */
         .special-banner {
             background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
             color: white;
             text-align: center;
-            padding: 20px 15px;
+            padding: 15px 10px; /* パディングを調整 */
             margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+            border-radius: 8px; /* 角丸を少し小さく */
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
         }
         .special-banner h2 {
-            font-size: 1.6em;
-            margin: 0 0 10px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            font-size: 1.4em; /* モバイル向けに縮小 */
+            margin: 0 0 8px 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
             line-height: 1.3;
         }
         .special-banner .ai-name {
-            color: #ffd700; 
+            color: #ffd700;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.1em; /* モバイル向けに縮小 */
         }
         .special-banner p {
-            font-size: 1em;
-            margin: 10px 0 0 0;
+            font-size: 0.9em; /* モバイル向けに縮小 */
+            margin: 8px 0 0 0;
             line-height: 1.4;
         }
         /* フッター内のLINE問い合わせセクション */
         .footer-contact {
             background-color: #f8f9fa;
-            padding: 20px 15px;
+            padding: 15px 10px; /* パディングを調整 */
             margin: 20px 0 0 0;
-            border-radius: 10px;
+            border-radius: 8px; /* 角丸を小さく */
             border: 2px solid #06c755;
         }
         .footer-contact h3 {
             color: #333;
-            font-size: 1.1em;
-            margin: 0 0 10px 0;
+            font-size: 1em; /* モバイル向けに縮小 */
+            margin: 0 0 8px 0;
             line-height: 1.4;
         }
         .footer-contact p {
             color: #555;
-            font-size: 0.9em;
-            margin: 8px 0;
+            font-size: 0.85em; /* モバイル向けに縮小 */
+            margin: 6px 0;
             line-height: 1.5;
         }
         .line-contact-button {
@@ -93,10 +93,10 @@
             background: linear-gradient(135deg, #06c755 0%, #05a344 100%);
             color: white;
             font-weight: bold;
-            font-size: 1em;
-            padding: 12px 30px;
-            margin: 12px 0 0 0;
-            border-radius: 25px;
+            font-size: 0.9em; /* モバイル向けに縮小 */
+            padding: 10px 25px; /* パディングを調整 */
+            margin: 10px 0 0 0;
+            border-radius: 20px; /* 角丸を小さく */
             text-decoration: none;
             box-shadow: 0 3px 10px rgba(6, 199, 85, 0.3);
             transition: transform 0.2s, box-shadow 0.2s;
@@ -106,40 +106,40 @@
             box-shadow: 0 5px 15px rgba(6, 199, 85, 0.4);
         }
         .line-icon {
-            font-size: 1.2em;
-            margin-right: 6px;
+            font-size: 1.1em; /* アイコンサイズを調整 */
+            margin-right: 5px;
             vertical-align: middle;
         }
         /* メインコンテンツ */
         .main-content {
-            padding: 30px 15px;
+            padding: 20px 10px; /* パディングを調整 */
             text-align: center;
         }
         .chat-intro h3 {
             color: #007bff;
-            font-size: 1.3em;
-            margin-bottom: 20px;
+            font-size: 1.2em; /* モバイル向けに縮小 */
+            margin-bottom: 15px;
             line-height: 1.4;
         }
         /* 洗練された情報カード */
         .info-cards {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 15px;
-            margin: 25px 0;
+            gap: 12px; /* ギャップを小さく */
+            margin: 20px 0;
             text-align: left;
         }
         .info-card {
             background-color: white;
-            padding: 18px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            border-left: 4px solid #007bff;
+            padding: 15px; /* パディングを調整 */
+            border-radius: 10px; /* 角丸を小さく */
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            border-left: 3px solid #007bff; /* ボーダー幅を調整 */
             transition: transform 0.2s, box-shadow 0.2s;
         }
         .info-card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
         }
         .info-card.important {
             border-left-color: #dc3545;
@@ -152,22 +152,22 @@
         .info-card-header {
             display: flex;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         .info-card-icon {
-            font-size: 1.5em;
-            margin-right: 10px;
+            font-size: 1.3em; /* アイコンサイズを調整 */
+            margin-right: 8px;
         }
         .info-card-title {
-            font-size: 1.1em;
+            font-size: 1em; /* モバイル向けに縮小 */
             font-weight: bold;
             color: #333;
             margin: 0;
         }
         .info-card-content {
             color: #555;
-            font-size: 0.95em;
-            line-height: 1.6;
+            font-size: 0.9em; /* モバイル向けに縮小 */
+            line-height: 1.5;
             margin: 0;
         }
         .info-card-content strong {
@@ -175,20 +175,20 @@
         }
         .example-box {
             background-color: #f8f9fa;
-            padding: 10px 12px;
-            margin-top: 10px;
-            border-radius: 6px;
-            border-left: 3px solid #6c757d;
+            padding: 8px 10px; /* パディングを調整 */
+            margin-top: 8px;
+            border-radius: 4px;
+            border-left: 2px solid #6c757d; /* ボーダー幅を調整 */
         }
         .example-box p {
-            margin: 5px 0;
-            font-size: 0.9em;
+            margin: 4px 0;
+            font-size: 0.85em; /* モバイル向けに縮小 */
             color: #495057;
         }
         .interaction-methods {
             display: flex;
-            gap: 10px;
-            margin-top: 10px;
+            gap: 8px;
+            margin-top: 8px;
             flex-wrap: wrap;
         }
         .method-badge {
@@ -196,35 +196,35 @@
             align-items: center;
             background-color: #e7f3ff;
             color: #0066cc;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
+            padding: 5px 10px; /* パディングを調整 */
+            border-radius: 15px;
+            font-size: 0.8em; /* モバイル向けに縮小 */
             font-weight: 500;
         }
         .method-badge .badge-icon {
-            margin-right: 5px;
+            margin-right: 4px;
         }
         .mind-ai-label {
             display: inline-block;
             background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
             color: #007bff;
             font-weight: bold;
-            font-size: 1.1em;
-            padding: 6px 15px;
-            border-radius: 25px;
-            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
-            margin: 10px 0;
+            font-size: 1em; /* モバイル向けに縮小 */
+            padding: 5px 12px;
+            border-radius: 20px;
+            box-shadow: 0 3px 8px rgba(255, 215, 0, 0.5);
+            margin: 8px 0;
         }
         /* チャットボットコンテナ */
         .chatbot-container {
             width: 100%;
             max-width: 800px;
-            margin: 20px auto;
-            height: 450px;
+            margin: 15px auto; /* マージンを調整 */
+            height: 400px; /* 高さを調整 */
             border: 2px solid #007bff;
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+            box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3);
             background-color: white;
         }
         .chatbot-container iframe {
@@ -239,61 +239,61 @@
             background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
             color: white;
             font-weight: bold;
-            font-size: 1em;
-            padding: 14px 35px;
-            margin: 20px 0;
-            border-radius: 30px;
+            font-size: 0.9em; /* モバイル向けに縮小 */
+            padding: 12px 30px; /* パディングを調整 */
+            margin: 15px 0;
+            border-radius: 25px;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+            box-shadow: 0 3px 10px rgba(0, 123, 255, 0.4);
             transition: transform 0.2s, box-shadow 0.2s;
             border: none;
             cursor: pointer;
         }
         .fullscreen-chat-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
         }
         .fullscreen-icon {
-            font-size: 1.1em;
-            margin-right: 8px;
+            font-size: 1em; /* アイコンサイズを調整 */
+            margin-right: 6px;
             vertical-align: middle;
         }
         /* 機能紹介セクション */
         .features {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-            margin: 30px 0;
+            grid-template-columns: 1fr; /* モバイルでは1列で表示を維持 */
+            gap: 12px; /* ギャップを小さく */
+            margin: 20px 0;
             text-align: left;
         }
         .feature-card {
             background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            border-left: 4px solid #007bff;
+            padding: 15px; /* パディングを調整 */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 3px solid #007bff;
         }
         .feature-card h4 {
             color: #007bff;
-            font-size: 1.1em;
+            font-size: 1em; /* モバイル向けに縮小 */
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .feature-card p {
             color: #555;
-            font-size: 0.95em;
+            font-size: 0.9em; /* モバイル向けに縮小 */
             line-height: 1.5;
         }
         /* フッター */
         footer {
             text-align: center;
-            padding: 15px;
-            margin-top: 25px;
+            padding: 10px; /* パディングを調整 */
+            margin-top: 20px;
             border-top: 1px solid #ccc;
-            font-size: 0.85em;
+            font-size: 0.8em; /* モバイル向けに縮小 */
             color: #777;
         }
-        
+
         /* プライバシーポリシーリンク */
         .privacy-link {
             color: #007bff;
@@ -306,8 +306,8 @@
             color: #0056b3;
             text-decoration: underline;
         }
-        
-        /* モーダル（ポップアップ）スタイル */
+
+        /* モーダル（ポップアップ）スタイル - モバイル向けに調整 */
         .modal {
             display: none;
             position: fixed;
@@ -317,118 +317,121 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6); /* 背景を少し濃く */
             animation: fadeIn 0.3s;
         }
-        
+
         .modal.show {
             display: block;
         }
-        
+
         .modal-content {
             background-color: #fefefe;
-            margin: 5% auto;
+            margin: 3% auto; /* 上部のマージンを小さく */
             padding: 0;
-            border: 1px solid #888;
-            width: 90%;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            animation: slideIn 0.3s;
-            max-height: 85vh;
+            border: none; /* ボーダーを削除 */
+            width: 95%; /* 幅を広げる */
+            max-width: 95%; /* max-widthも95%に */
+            border-radius: 8px; /* 角丸を小さく */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            max-height: 94vh; /* 高さを調整 */
             display: flex;
             flex-direction: column;
+            overflow: hidden; /* モーダル全体を隠す */
+            animation: slideIn 0.3s;
         }
-        
+
         .modal-header {
-            padding: 20px 25px;
+            padding: 15px 20px; /* パディングを調整 */
             background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
             color: white;
-            border-radius: 10px 10px 0 0;
+            border-radius: 8px 8px 0 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .modal-header h2 {
             margin: 0;
-            font-size: 1.5em;
+            font-size: 1.2em; /* モバイル向けに縮小 */
         }
-        
+
         .close {
             color: white;
-            font-size: 32px;
+            font-size: 28px; /* サイズを調整 */
             font-weight: bold;
             cursor: pointer;
             transition: transform 0.2s;
             line-height: 1;
         }
-        
+
         .close:hover,
         .close:focus {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
-        
+
         .modal-body {
-            padding: 25px;
+            padding: 15px; /* パディングを調整 */
             overflow-y: auto;
             flex: 1;
+            font-size: 0.9em; /* モーダル本文のフォントサイズを調整 */
         }
-        
+
         .modal-body h3 {
             color: #007bff;
-            font-size: 1.2em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
+            font-size: 1.1em; /* モバイル向けに縮小 */
+            margin-top: 15px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #007bff; /* ボーダーを細く */
+            padding-bottom: 3px;
         }
-        
+
         .modal-body h3:first-child {
             margin-top: 0;
         }
-        
+
         .modal-body p {
-            line-height: 1.8;
-            margin: 10px 0;
+            line-height: 1.6; /* 行間を調整 */
+            margin: 8px 0;
         }
-        
+
         .modal-body table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0;
+            margin: 10px 0;
+            font-size: 0.9em; /* テーブル内のフォントサイズを調整 */
         }
-        
+
         .modal-body table th,
         .modal-body table td {
             border: 1px solid #ddd;
-            padding: 12px;
+            padding: 8px; /* パディングを調整 */
             text-align: left;
         }
-        
+
         .modal-body table th {
             background-color: #f8f9fa;
             color: #333;
             font-weight: bold;
         }
-        
+
         .modal-body ol {
-            padding-left: 25px;
+            padding-left: 20px;
         }
-        
+
         .modal-body ol li {
-            margin: 8px 0;
-            line-height: 1.8;
+            margin: 6px 0;
+            line-height: 1.6;
         }
-        
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        
+
         @keyframes slideIn {
             from {
-                transform: translateY(-50px);
+                transform: translateY(-30px); /* スライドを小さく */
                 opacity: 0;
             }
             to {
@@ -437,8 +440,11 @@
             }
         }
 
-        /* タブレット以上のサイズ (768px以上) */
+        /* タブレット以上のサイズ (768px以上) - 可能な限り元のスタイルに戻す */
         @media (min-width: 768px) {
+            body {
+                font-size: 15px; /* デスクトップで元のサイズに戻す */
+            }
             .container {
                 padding: 20px;
             }
@@ -485,6 +491,7 @@
             }
             .info-card {
                 padding: 25px;
+                border-left: 4px solid #007bff;
             }
             .info-card-title {
                 font-size: 1.2em;
@@ -495,6 +502,10 @@
             .example-box p {
                 font-size: 0.95em;
             }
+            .method-badge {
+                font-size: 0.85em;
+                padding: 6px 12px;
+            }
             .mind-ai-label {
                 font-size: 1.5em;
                 padding: 10px 25px;
@@ -504,6 +515,10 @@
                 border: 5px solid #007bff;
                 margin: 30px auto;
             }
+            .fullscreen-chat-button {
+                font-size: 1em;
+                padding: 14px 35px;
+            }
             .features {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 gap: 20px;
@@ -511,6 +526,7 @@
             }
             .feature-card {
                 padding: 25px;
+                border-left: 4px solid #007bff;
             }
             .feature-card h4 {
                 font-size: 1.3em;
@@ -524,7 +540,28 @@
                 font-size: 0.9em;
             }
             .modal-content {
-                margin: 3% auto;
+                margin: 5% auto;
+                width: 90%;
+                max-width: 800px;
+            }
+            .modal-header h2 {
+                font-size: 1.5em;
+            }
+            .close {
+                font-size: 32px;
+            }
+            .modal-body {
+                padding: 25px;
+                font-size: 1em;
+            }
+            .modal-body h3 {
+                font-size: 1.2em;
+                border-bottom: 2px solid #007bff;
+            }
+            .modal-body table th,
+            .modal-body table td {
+                padding: 12px;
+                font-size: 1em;
             }
         }
     </style>
@@ -545,7 +582,7 @@
             <div class="chat-intro">
                 <div class="mind-ai-label">マインドAI</div>
                 <h3><strong>スーパーブレイン</strong> に関するご質問は、すべて<strong>マインドAI</strong>にお任せ！</h3>
-                
+
                 <div class="info-cards">
                     <div class="info-card important">
                         <div class="info-card-header">
@@ -565,12 +602,12 @@
                         </div>
                         <div class="info-card-content">
                             <p><strong>具体的な質問</strong>をしていただくと、より正確な回答が得られます。</p>
-                            
+
                             <div class="interaction-methods">
                                 <span class="method-badge"><span class="badge-icon">⌨️</span>文字入力</span>
                                 <span class="method-badge"><span class="badge-icon">🔘</span>選択ボタン</span>
                             </div>
-                            
+
                             <div class="example-box">
                                 <p><strong>例:</strong> 「SB本体の充電方法を教えてください」</p>
                                 <p><strong>例:</strong> 「音が聞こえない。イヤホンのリセット手順は?」</p>
@@ -581,7 +618,7 @@
             </div>
 
             <h3>今すぐ<strong>マインドAI</strong>に相談してみましょう</h3>
-            
+
             <div class="chatbot-container">
                 <iframe
                  src="https://udify.app/chatbot/q2uA8e1VAifYHPo9"
@@ -628,7 +665,6 @@
         </footer>
     </div>
 
-    <!-- プライバシーポリシーモーダル -->
     <div id="privacyModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -640,7 +676,7 @@
 
                 <h3>1. 収集する利用情報とその目的</h3>
                 <p>本サービスでは、サポートおよびサービス向上の目的で、以下の利用情報を自動的に収集します。</p>
-                
+
                 <table>
                     <thead>
                         <tr>
