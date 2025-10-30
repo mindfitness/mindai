@@ -268,6 +268,149 @@
             font-size: 0.85em;
             color: #777;
         }
+        
+        /* プライバシーポリシーリンク */
+        .privacy-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .privacy-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        
+        /* モーダル（ポップアップ）スタイル */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s;
+        }
+        
+        .modal.show {
+            display: block;
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.3s;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .modal-header {
+            padding: 20px 25px;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        
+        .close {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+            line-height: 1;
+        }
+        
+        .close:hover,
+        .close:focus {
+            transform: scale(1.2);
+        }
+        
+        .modal-body {
+            padding: 25px;
+            overflow-y: auto;
+            flex: 1;
+        }
+        
+        .modal-body h3 {
+            color: #007bff;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        
+        .modal-body h3:first-child {
+            margin-top: 0;
+        }
+        
+        .modal-body p {
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        
+        .modal-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .modal-body table th,
+        .modal-body table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .modal-body table th {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .modal-body ol {
+            padding-left: 25px;
+        }
+        
+        .modal-body ol li {
+            margin: 8px 0;
+            line-height: 1.8;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
 
         /* タブレット以上のサイズ (768px以上) */
         @media (min-width: 768px) {
@@ -290,20 +433,6 @@
             }
             .special-banner p {
                 font-size: 1.3em;
-            }
-            .line-banner {
-                padding: 35px 30px;
-                margin: 30px 0;
-            }
-            .line-banner h3 {
-                font-size: 1.8em;
-            }
-            .line-banner p {
-                font-size: 1.2em;
-            }
-            .line-button {
-                font-size: 1.3em;
-                padding: 18px 50px;
             }
             .footer-contact {
                 padding: 25px 20px;
@@ -369,6 +498,9 @@
                 margin-top: 50px;
                 font-size: 0.9em;
             }
+            .modal-content {
+                margin: 3% auto;
+            }
         }
     </style>
 </head>
@@ -383,8 +515,6 @@
             <h2><strong>Super Brain 1</strong> <span class="ai-name">お問い合わせAI</span> 特設ページ</h2>
             <p>製品に関するご質問にリアルタイムでお答えする専用AIアシスタント</p>
         </div>
-
-
 
         <main class="main-content">
             <div class="chat-intro">
@@ -443,7 +573,7 @@
                     <p>製品の操作方法や効果的な使い方について、<strong>いつでも</strong>質問にお答えします。</p>
                 </div>
                 <div class="feature-card">
-                    <h4>💬 簡単なチャットの使い方</h4>
+                    <h4>💬 簡単なチャット形式</h4>
                     <p>チャットボックスに質問を入力し、エンターキーを押すだけです。専門用語も遠慮なくご入力ください。</p>
                 </div>
                 <div class="feature-card">
@@ -462,8 +592,99 @@
                     <span class="line-icon"></span>LINEでお問い合わせ
                 </a>
             </div>
-            <p style="margin-top: 20px;">&copy; 2025 MindFitness Co., Ltd. All Rights Reserved.</p>
+            <p style="margin-top: 20px;">
+                <a href="#" class="privacy-link" onclick="openPrivacyModal(); return false;">プライバシーポリシー</a>
+            </p>
+            <p>&copy; 2025 MindFitness Co., Ltd. All Rights Reserved.</p>
         </footer>
     </div>
+
+    <!-- プライバシーポリシーモーダル -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>プライバシーポリシー</h2>
+                <span class="close" onclick="closePrivacyModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>株式会社マインドフィットネス(以下「当社」)は、「マインドAI」(以下「本サービス」)をご利用いただくお客様の個人情報およびチャット履歴等の情報(以下「利用情報」)の保護を最重要事項と認識し、以下の通りプライバシーポリシーを定めます。</p>
+
+                <h3>1. 収集する利用情報とその目的</h3>
+                <p>本サービスでは、サポートおよびサービス向上の目的で、以下の利用情報を自動的に収集します。</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>情報の種類</th>
+                            <th>収集する情報の内容</th>
+                            <th>主な利用目的</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>チャット履歴</strong></td>
+                            <td>お客様がAIに入力された質問内容、AIの応答内容、会話のログデータ。</td>
+                            <td>
+                                (1) 適切なサポートの提供(質問への回答、問題解決)<br>
+                                (2) サービス改善のためのモニタリング(回答精度の向上、新機能開発)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>技術情報</strong></td>
+                            <td>アクセス日時、利用端末情報(OS・ブラウザの種類)、IPアドレス。</td>
+                            <td>(3) システムの安定稼働、不正アクセスの防止。</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>2. 利用情報の第三者提供について</h3>
+                <p>当社は、以下の場合を除き、お客様の同意なく利用情報を第三者へ提供することはいたしません。</p>
+                <ol>
+                    <li>法令に基づく場合。</li>
+                    <li>人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき。</li>
+                    <li>本サービスの提供に関わる業務を、当社の業務委託先(AIプラットフォーム提供会社など)に委託する場合。この場合、当社は委託先に対し、利用情報が安全に管理されるよう、適切な監督を行います。</li>
+                </ol>
+
+                <h3>3. 利用情報の開示・訂正・利用停止</h3>
+                <p>お客様は、当社が保有するお客様ご自身の利用情報について、開示、訂正、利用停止等を請求することができます。これらのご請求については、次項に定めるお問い合わせ窓口にご連絡ください。なお、チャットログのように特定の個人と紐づかないデータについては、開示・訂正の対象外となる場合があります。</p>
+
+                <h3>4. 安全管理措置</h3>
+                <p>当社は、収集した利用情報への不正アクセス、紛失、破壊、改ざんおよび漏洩などを防止するため、厳重なセキュリティ対策を講じ、適切な安全管理に努めます。</p>
+
+                <h3>5. 本ポリシーの変更</h3>
+                <p>当社は、法令の変更やサービス内容の変更に応じて、本ポリシーを随時改定することがあります。改定後のポリシーは、本ウェブページに掲載した時点から効力を生じるものとします。</p>
+
+                <h3>6. お問い合わせ窓口</h3>
+                <p>本ポリシーに関するお問い合わせ、または利用情報の取り扱いに関するご相談は、マインドAI問い合わせ窓口までご連絡ください。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPrivacyModal() {
+            document.getElementById('privacyModal').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        // モーダル外クリックで閉じる
+        window.onclick = function(event) {
+            const modal = document.getElementById('privacyModal');
+            if (event.target === modal) {
+                closePrivacyModal();
+            }
+        }
+
+        // ESCキーで閉じる
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closePrivacyModal();
+            }
+        });
+    </script>
 </body>
 </html>
