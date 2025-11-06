@@ -756,7 +756,7 @@
                     <span class="line-icon">💬</span>LINEでお問い合わせ
                 </a>
             </div>
-            <p style="margin-top: 20px;">
+                   <p style="margin-top: 20px;">
                 <a href="#" class="privacy-link" onclick="openPrivacyModal(); return false;">プライバシーポリシー</a>
             </p>
             <p>&copy; 2025 MindFitness Co., Ltd. All Rights Reserved.</p>
@@ -776,4 +776,78 @@
                 <p>本サービスでは、サポートおよびサービス向上の目的で、以下の利用情報を自動的に収集します。</p>
 
                 <table>
-                    <thea
+                    <thead>
+                        <tr>
+                            <th>情報の種類</th>
+                            <th>収集する情報の内容</th>
+                            <th>主な利用目的</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>チャット履歴</strong></td>
+                            <td>お客様がAIに入力された質問内容、AIの応答内容、会話のログデータ。</td>
+                            <td>
+                                (1) 適切なサポートの提供(質問への回答、問題解決)<br>
+                                (2) サービス改善のためのモニタリング(回答精度の向上、新機能開発)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>技術情報</strong></td>
+                            <td>アクセス日時、利用端末情報(OS・ブラウザの種類)、IPアドレス。</td>
+                            <td>(3) システムの安定稼働、不正アクセスの防止。</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>2. 利用情報の第三者提供について</h3>
+                <p>当社は、以下の場合を除き、お客様の同意なく利用情報を第三者へ提供することはいたしません。</p>
+                <ol>
+                    <li>法令に基づく場合。</li>
+                    <li>人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき。</li>
+                    <li>本サービスの提供に関わる業務を、当社の業務委託先(AIプラットフォーム提供会社など)に委託する場合。この場合、当社は委託先に対し、利用情報が安全に管理されるよう、適切な監督を行います。</li>
+                </ol>
+
+                <h3>3. 利用情報の開示・訂正・利用停止</h3>
+                <p>お客様は、当社が保有するお客様ご自身の利用情報について、開示、訂正、利用停止等を請求することができます。これらのご請求については、次項に定めるお問い合わせ窓口にご連絡ください。なお、チャットログのように特定の個人と紐づかないデータについては、開示・訂正の対象外となる場合があります。</p>
+
+                <h3>4. 安全管理措置</h3>
+                <p>当社は、収集した利用情報への不正アクセス、紛失、破壊、改ざんおよび漏洩などを防止するため、厳重なセキュリティ対策を講じ、適切な安全管理に努めます。</p>
+
+                <h3>5. 本ポリシーの変更</h3>
+                <p>当社は、法令の変更やサービス内容の変更に応じて、本ポリシーを随時改定することがあります。改定後のポリシーは、本ウェブページに掲載した時点から効力を生じるものとします。</p>
+
+                <h3>6. お問い合わせ窓口</h3>
+                <p>本ポリシーに関するお問い合わせ、または利用情報の取り扱いに関するご相談は、マインドAI問い合わせ窓口までご連絡ください。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPrivacyModal() {
+            document.getElementById('privacyModal').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        // モーダル外クリックで閉じる
+        window.onclick = function(event) {
+            const modal = document.getElementById('privacyModal');
+            if (event.target === modal) {
+                closePrivacyModal();
+            }
+        }
+
+        // ESCキーで閉じる
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closePrivacyModal();
+            }
+        });
+    </script>
+</body>
+</html>
